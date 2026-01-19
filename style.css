@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: system-ui, sans-serif;
   background: #0b0b0b;
@@ -21,6 +25,7 @@ body {
   align-items: center;
   background: rgba(0,0,0,0.8);
   backdrop-filter: blur(6px);
+  z-index: 100;
 }
 
 .logo {
@@ -41,15 +46,21 @@ body {
 }
 
 .nav-links a:hover {
-  color: #38bdf8;
+  color: #b91c1c;
+}
+
+/* HOME */
+.home {
+  height: 100vh;
+  background: #4a0404; /* dark red */
 }
 
 /* HERO */
 .hero {
   height: 100vh;
   background: linear-gradient(
-    rgba(0,0,0,0.65),
-    rgba(0,0,0,0.65)
+    rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)
   );
   display: flex;
   align-items: center;
@@ -72,13 +83,13 @@ body {
   max-width: 1100px;
 }
 
+.section.dark {
+  background: #050505;
+}
+
 .section h2 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
-}
-
-.section.dark {
-  background: #050505;
 }
 
 /* BUTTON */
@@ -86,15 +97,15 @@ body {
   display: inline-block;
   margin-top: 1.5rem;
   padding: 0.8rem 1.6rem;
-  border: 1px solid #38bdf8;
-  color: #38bdf8;
+  border: 1px solid #b91c1c;
+  color: #b91c1c;
   text-decoration: none;
   border-radius: 30px;
   transition: all 0.3s ease;
 }
 
 .btn:hover {
-  background: #38bdf8;
+  background: #b91c1c;
   color: #000;
 }
 
@@ -116,7 +127,7 @@ body {
 }
 
 .contact-list a {
-  color: #38bdf8;
+  color: #b91c1c;
   text-decoration: none;
 }
 
