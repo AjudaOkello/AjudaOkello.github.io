@@ -1,87 +1,114 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  margin: 0;
   font-family: system-ui, sans-serif;
-  background: #0f172a;
-  color: #e5e7eb;
+  background: #0b0b0b;
+  color: #eaeaea;
 }
 
-nav {
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1rem 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background: #020617;
-  position: sticky;
-  top: 0;
+  background: rgba(0,0,0,0.8);
+  backdrop-filter: blur(6px);
 }
 
-nav h1 {
-  font-size: 1.2rem;
+.logo {
+  font-weight: 600;
+  font-size: 1.1rem;
 }
 
-nav ul {
+.nav-links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
-nav a {
+.nav-links a {
+  color: #eaeaea;
   text-decoration: none;
-  color: #e5e7eb;
+  font-size: 0.9rem;
 }
 
-nav a:hover {
-  color: #60a5fa;
+.nav-links a:hover {
+  color: #38bdf8;
 }
 
+/* HERO */
 .hero {
-  text-align: center;
-  padding: 4rem 1rem;
-  background: linear-gradient(135deg, #2563eb, #38bdf8);
-  color: #020617;
+  height: 100vh;
+  background: linear-gradient(
+    rgba(0,0,0,0.65),
+    rgba(0,0,0,0.65)
+  );
+  display: flex;
+  align-items: center;
+  padding-left: 6rem;
 }
 
-section {
-  max-width: 900px;
-  margin: auto;
-  padding: 3rem 1.5rem;
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
 }
 
-h2 {
-  color: #60a5fa;
-  margin-bottom: 1rem;
+.hero-content p {
+  font-size: 1.2rem;
+  opacity: 0.85;
 }
 
-.project {
-  background: #020617;
-  padding: 1rem;
-  border-radius: 10px;
-  margin-bottom: 1rem;
+/* SECTIONS */
+.section {
+  padding: 6rem 6rem;
+  max-width: 1100px;
 }
 
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.section.dark {
+  background: #050505;
+}
+
+/* BUTTON */
 .btn {
   display: inline-block;
   margin-top: 1.5rem;
-  padding: 0.75rem 1.5rem;
-  background: #2563eb;
-  color: white;
+  padding: 0.8rem 1.6rem;
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
   text-decoration: none;
-  border-radius: 8px;
-  font-weight: 500;
-  transition: background 0.2s ease;
+  border-radius: 30px;
+  transition: all 0.3s ease;
 }
 
 .btn:hover {
-  background: #1d4ed8;
+  background: #38bdf8;
+  color: #000;
 }
 
+/* PROJECTS */
+.project-card {
+  background: #111;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+}
+
+/* CONTACT */
 .contact-list {
   list-style: none;
-  padding: 0;
 }
 
 .contact-list li {
@@ -93,12 +120,10 @@ h2 {
   text-decoration: none;
 }
 
-.contact-list a:hover {
-  text-decoration: underline;
-}
-
+/* FOOTER */
 footer {
   text-align: center;
-  padding: 1rem;
+  padding: 2rem;
+  font-size: 0.8rem;
   opacity: 0.6;
 }
