@@ -52,8 +52,16 @@ body {
 /* HOME */
 .home {
   height: 100vh;
-  background: #4a0404; /* dark red */
+  background:
+    linear-gradient(
+      rgba(74, 4, 4, 0.85),
+      rgba(74, 4, 4, 0.85)
+    ),
+    url("assets/home.jpg");
+  background-size: cover;
+  background-position: center;
 }
+
 
 /* HERO */
 .hero {
