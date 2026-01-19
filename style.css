@@ -52,16 +52,16 @@ body {
 /* HOME */
 
 .home {
-  height: 100vh; /* Makes the section full height of the viewport */
-  background:
-    linear-gradient(
-      rgba(74, 4, 4, 0.85),  /* Top color of overlay */
-      rgba(74, 4, 4, 0.85)   /* Bottom color of overlay */
-    ),
-    url("cowboywallpaper.jpg"); /* The actual background image */
-  background-size: cover;        /* Image covers the entire div, cropping if needed */
-  background-position: center;   /* Centers the image */
+  height: 100vh; /* Full viewport height */
+  background: url("cowboywallpaper.jpg") no-repeat center center;
+  background-size: cover; /* Cover the entire div */
+  display: flex;           /* Allows easy centering of content */
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically */
+  color: white;            /* Email text color */
+  font-size: 2rem;         /* Adjust as needed */
 }
+
 
 
 /* HERO */
