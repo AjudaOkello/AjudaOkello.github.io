@@ -15,7 +15,7 @@
 
     html, body {
       height: 100%;
-      overflow: hidden; /* 🔒 lock body scroll */
+      overflow: hidden; /* 🔒 Hard lock: prevents mouse wheel & touch scrolling */
       background: #0f0f0f;
       color: #eee;
     }
@@ -49,6 +49,7 @@
       text-decoration: none;
       color: #eee;
       transition: 0.3s;
+      cursor: pointer; /* Shows hand icon even without href */
     }
 
     .nav-links a:hover {
@@ -58,20 +59,19 @@
     /* SCROLL CONTAINER */
     .container {
       height: 100vh;
-      overflow-y: scroll;
-      scroll-snap-type: y mandatory;
+      overflow: hidden; /* 🔒 Keeps sections locked in place */
     }
 
     /* FULL PAGE SECTIONS */
     section {
       height: 100vh;
-      scroll-snap-align: start;
+      width: 100%;
       padding: 100px 40px 40px;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      max-width: 900px;
-      margin: auto;
+      align-items: center; /* Centers content horizontally */
+      text-align: center;
     }
 
     /* HOME */
@@ -80,7 +80,6 @@
         rgba(74, 4, 4, 0.95),
         rgba(74, 4, 4, 0.95)
       );
-      max-width: 100%;
     }
 
     /* ABOUT */
@@ -110,6 +109,7 @@
     p {
       opacity: 0.85;
       line-height: 1.6;
+      max-width: 700px;
     }
 
     /* BUTTON */
@@ -129,6 +129,8 @@
       padding: 20px;
       margin: 15px 0;
       border-radius: 8px;
+      width: 100%;
+      max-width: 600px;
     }
 
     /* CONTACT */
@@ -146,7 +148,7 @@
     }
 
     footer {
-      margin-top: auto;
+      margin-top: 40px;
       opacity: 0.4;
       font-size: 0.9rem;
     }
@@ -154,28 +156,24 @@
 </head>
 <body>
 
-  <!-- NAVBAR -->
   <nav class="navbar">
     <div class="logo">AJUDA OKELLO</div>
     <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a onclick="scrollToSection('home')">Home</a></li>
+      <li><a onclick="scrollToSection('about')">About</a></li>
+      <li><a onclick="scrollToSection('projects')">Projects</a></li>
+      <li><a onclick="scrollToSection('contact')">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- SCROLL CONTAINER -->
   <div class="container">
 
-    <!-- HOME -->
     <section id="home">
       <h1>Welcome</h1>
-      <p>Scroll to explore my portfolio</p>
+      <p>Use the menu above to explore my portfolio</p>
       <footer>© 2026 AJUDA OKELLO</footer>
     </section>
 
-    <!-- ABOUT -->
     <section id="about">
       <h2>About Me</h2>
       <p>
@@ -186,7 +184,6 @@
       <footer>© 2026 AJUDA OKELLO</footer>
     </section>
 
-    <!-- PROJECTS -->
     <section id="projects">
       <h2>Projects</h2>
 
@@ -208,7 +205,6 @@
       <footer>© 2026 AJUDA OKELLO</footer>
     </section>
 
-    <!-- CONTACT -->
     <section id="contact">
       <h2>Contact</h2>
 
@@ -223,6 +219,18 @@
     </section>
 
   </div>
+
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    }
+  </script>
 
 </body>
 </html>
