@@ -4,34 +4,165 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>AJUDA OKELLO | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #0f0f0f;
+      color: #eee;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: #120000;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #eee;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #ff4d4d;
+    }
+
+    /* HOME */
+    .home {
+      height: 100vh;
+      background: linear-gradient(
+        rgba(74, 4, 4, 0.9),
+        rgba(74, 4, 4, 0.9)
+      );
+    }
+
+    /* HERO */
+    .hero {
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #1a0000;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+    }
+
+    .hero p {
+      margin-top: 10px;
+      opacity: 0.8;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 100px 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .dark {
+      background: #120000;
+      max-width: 100%;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+
+    /* BUTTON */
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: #ff4d4d;
+      color: #000;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    /* PROJECTS */
+    .project-card {
+      background: #1e0000;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+    }
+
+    /* CONTACT */
+    .contact-list {
+      list-style: none;
+    }
+
+    .contact-list li {
+      margin: 10px 0;
+    }
+
+    .contact-list a {
+      color: #ff4d4d;
+      text-decoration: none;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 20px;
+      opacity: 0.5;
+    }
+  </style>
 </head>
 <body>
 
   <!-- NAVBAR -->
   <nav class="navbar">
-    <div class="logo">AJUDA OkELLO</div>
+    <div class="logo">AJUDA OKELLO</div>
     <ul class="nav-links">
       <li><a href="#home">Home</a></li>
-      <li><a href="#hero">About</a></li>
+      <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- HOME (EMPTY DARK RED) -->
+  <!-- HOME -->
   <section id="home" class="home"></section>
 
   <!-- HERO -->
-  <section id="hero" class="hero">
-    <div class="hero-content">
-      <h1>Hello,👋</h1>
+  <section class="hero">
+    <div>
+      <h1>Hello 👋</h1>
       <p>Electrical & Electronic Engineering Portfolio</p>
     </div>
   </section>
 
   <!-- ABOUT -->
-  <section id="about" class="section">
+  <section id="about">
     <h2>About Me</h2>
     <p>
       I’m an Electrical & Electronic Engineering student with a strong passion
@@ -39,13 +170,11 @@
       practical projects and continuously improving my technical skills.
     </p>
 
-    <a href="AJ_Ok_CV.pdf" download class="btn">
-      Download My CV
-    </a>
+    <a href="AJ_Ok_CV.pdf" download class="btn">Download My CV</a>
   </section>
 
   <!-- PROJECTS -->
-  <section id="projects" class="section dark">
+  <section id="projects" class="dark">
     <h2>Projects</h2>
 
     <div class="project-card">
@@ -65,19 +194,19 @@
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="section">
+  <section id="contact">
     <h2>Contact</h2>
 
     <ul class="contact-list">
-      <li>Instagram: <a href="https://www.instagram.com/ajuda.rw/<" target="_blank">https://www.instagram.com/ajuda.rw/</a></li>
-      <li>LinkedIn: <a href="https://www.linkedin.com/in/ajudaeee/" target="_blank">https://www.linkedin.com/in/ajudaeee/</a></li>
+      <li>Instagram: <a href="https://www.instagram.com/ajuda.rw/" target="_blank">@ajuda.rw</a></li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/ajudaeee/" target="_blank">LinkedIn</a></li>
       <li>Email: <a href="mailto:Judaokello@gmail.com">Judaokello@gmail.com</a></li>
-      <li>Phone: <a href="tel:+61469704309">+61 469704309</a></li>
+      <li>Phone: <a href="tel:+61469704309">+61 469 704 309</a></li>
     </ul>
   </section>
 
   <footer>
-    © 2026 AJUDA OkELLO
+    © 2026 AJUDA OKELLO
   </footer>
 
 </body>
