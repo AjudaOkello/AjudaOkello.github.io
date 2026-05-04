@@ -136,3 +136,11 @@ footer {
   opacity: 0.5;
   background: #0f0f0f;
 }
+
+.profile-pic {
+  margin-top: 30px;
+  width: 280px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 77, 77, 0.4);
+}
