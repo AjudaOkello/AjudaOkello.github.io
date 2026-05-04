@@ -138,9 +138,8 @@ footer {
 }
 
 .profile-pic {
-  margin-top: 30px;
-  width: 280px;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(255, 77, 77, 0.4);
+  position: absolute;
+  bottom: 20px;
+  right: 40px;   /* 👈 move to right corner */
+  width: 160px;
 }
