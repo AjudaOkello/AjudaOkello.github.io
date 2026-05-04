@@ -5,12 +5,11 @@
   font-family: Arial, sans-serif;
 }
 
-/* UPDATED: Locked Scroll Logic */
 html, body {
   background: #0f0f0f;
   color: #eee;
   height: 100%;
-  overflow: hidden; /* This prevents the user from scrolling manually */
+  overflow: hidden;
   scroll-behavior: smooth;
 }
 
@@ -21,7 +20,7 @@ html, body {
   align-items: center;
   padding: 20px 40px;
   background: #120000;
-  position: fixed; /* Keeps nav visible while the "page" moves behind it */
+  position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
@@ -49,16 +48,11 @@ html, body {
   color: #ff4d4d;
 }
 
-/* UPDATED: SECTIONS (Each one is now a full "page") */
+/* SECTIONS */
 .home, .section {
-  height: 100vh; /* Full screen height */
+  height: 100vh;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 80px 40px;
-  text-align: center;
 }
 
 .home {
@@ -66,23 +60,60 @@ html, body {
     rgba(74, 4, 4, 0.9),
     rgba(74, 4, 4, 0.9)
   );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* HERO - Adjusted to fit inside the .home container */
+/* HOME SPLIT LAYOUT */
 .hero {
   width: 100%;
+  max-width: 1200px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.hero-content {
+  flex: 1;
+  text-align: left;
 }
 
 .hero-content h1 {
   font-size: 3rem;
+  line-height: 1.2;
 }
 
 .hero-content p {
-  margin-top: 10px;
-  opacity: 0.8;
+  margin-top: 15px;
+  font-size: 1.1rem;
+  opacity: 0.85;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 380px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(255, 77, 77, 0.4);
+}
+
+/* OTHER SECTIONS */
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #0f0f0f;
+  text-align: center;
 }
 
 .section.dark {
@@ -92,6 +123,12 @@ html, body {
 .section h2 {
   margin-bottom: 20px;
   font-size: 2rem;
+}
+
+.section p {
+  max-width: 800px;
+  line-height: 1.6;
+  opacity: 0.85;
 }
 
 /* BUTTON */
@@ -137,17 +174,23 @@ footer {
   background: #0f0f0f;
 }
 
-.profile-pic {
-  position: absolute;
-  bottom: 20px;
-  right: 40px;
-  width: 150px;
-  height: auto;
-  border-radius: 10px;
-  z-index: 1;
-}
+/* MOBILE */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
 
-.home {
-  position: relative;
-  overflow: hidden;
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-image img {
+    width: 260px;
+  }
 }
