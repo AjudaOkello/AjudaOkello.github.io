@@ -115,17 +115,19 @@ html, body {
 }
 
 /* ABOUT */
+
 .about-container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
 
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
 
-  gap: 60px;
+  gap: 100px;
+
+  margin-left: 40px;
 }
-
 .about-image {
   flex: 1;
   display: flex;
