@@ -1,4 +1,4 @@
-* { 
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -48,7 +48,7 @@ html, body {
   color: #ff4d4d;
 }
 
-/* HOME + SECTIONS */
+/* HOME + SECTION */
 .home,
 .section {
   height: 100vh;
@@ -56,6 +56,7 @@ html, body {
   padding: 80px 40px;
 }
 
+/* HOME */
 .home {
   background: linear-gradient(
     rgba(74, 4, 4, 0.9),
@@ -129,13 +130,14 @@ html, body {
   flex: 1;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .about-image img {
   width: 260px;
-  height: auto;
-  max-height: 70vh;
-  object-fit: contain;
+  height: 320px;
+  object-fit: cover;
+  object-position: center top;
   border-radius: 15px;
   box-shadow: 0 0 25px rgba(255, 77, 77, 0.4);
 }
@@ -246,6 +248,7 @@ footer {
   .hero-image img,
   .about-image img {
     width: 220px;
+    height: auto;
   }
 
   .nav-links {
