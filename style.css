@@ -210,17 +210,13 @@ body {
   text-align: left;
   box-shadow: 0 0 20px rgba(255, 77, 77, 0.15);
 }
-
 .project-img {
   width: 100%;
-  max-width: 500px;
-  height: 260px;
-  object-fit: contain;
-  display: block;
-  margin: 0 auto 25px;
+  max-width: 350px;
+  height: 200px;
+  object-fit: cover;
   border-radius: 10px;
-  background: #111;
-  padding: 10px;
+  margin-bottom: 20px;
 }
 
 .project-card h3 {
