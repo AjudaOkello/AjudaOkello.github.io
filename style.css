@@ -5,11 +5,18 @@
   font-family: Arial, sans-serif;
 }
 
+html {
+  scroll-snap-type: y mandatory;
+}
+
 html,
 body {
   background: #0f0f0f;
   color: #eee;
   scroll-behavior: smooth;
+
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 /* NAVBAR */
@@ -24,6 +31,7 @@ body {
   width: 100%;
   z-index: 1000;
 }
+
 
 .logo {
   font-weight: bold;
