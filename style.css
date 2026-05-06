@@ -49,8 +49,7 @@ html, body {
 }
 
 /* SECTIONS */
-.home,
-.section {
+.home, .section {
   height: 100vh;
   width: 100%;
   padding: 80px 40px;
@@ -85,26 +84,12 @@ html, body {
 .hero-content h1 {
   font-size: 3rem;
   line-height: 1.2;
-  margin-bottom: 20px;
 }
 
-.role {
-  font-size: 1.2rem;
-  opacity: 0.9;
-  margin-bottom: 10px;
-}
-
-.uni {
-  font-size: 1rem;
-  opacity: 0.75;
-  margin-bottom: 20px;
-}
-
-.desc {
-  font-size: 1rem;
+.hero-content p {
+  margin-top: 15px;
+  font-size: 1.1rem;
   opacity: 0.85;
-  max-width: 500px;
-  line-height: 1.6;
 }
 
 .hero-image {
@@ -114,10 +99,9 @@ html, body {
 }
 
 .hero-image img {
-  width: 260px;
+  width: 380px;
+  max-width: 100%;
   height: auto;
-  max-height: 70vh;
-  object-fit: contain;
   border-radius: 15px;
   box-shadow: 0 0 25px rgba(255, 77, 77, 0.4);
 }
@@ -142,10 +126,9 @@ html, body {
 }
 
 .section p {
-  max-width: 900px;
+  max-width: 800px;
   line-height: 1.6;
   opacity: 0.85;
-  margin-bottom: 15px;
 }
 
 /* BUTTON */
@@ -188,20 +171,11 @@ footer {
   text-align: center;
   padding: 20px;
   opacity: 0.5;
-  background: #120000;
+  background: #0f0f0f;
 }
 
 /* MOBILE */
 @media (max-width: 768px) {
-  .navbar {
-    padding: 20px;
-  }
-
-  .nav-links {
-    gap: 12px;
-    font-size: 0.9rem;
-  }
-
   .hero {
     flex-direction: column;
     text-align: center;
@@ -216,15 +190,12 @@ footer {
     font-size: 2rem;
   }
 
-  .hero-image img {
-    width: 220px;
-  }
-
-  .section {
-    padding: 90px 25px;
-  }
-
-  .section p {
-    font-size: 0.9rem;
-  }
+.hero-image img {
+  width: 260px;
+  height: auto;
+  max-height: 70vh;
+  object-fit: contain;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(255, 77, 77, 0.4);
+ }
 }
