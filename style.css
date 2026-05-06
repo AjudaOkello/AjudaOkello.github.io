@@ -370,5 +370,20 @@ footer {
   .contact-info {
     gap: 30px;
   }
+ .form-message {
+  margin-bottom: 15px;
+  color: #ff4d4d;
+  font-weight: bold;
 }
+
+[data-fs-error] {
+  color: #ff4d4d;
+  font-size: 0.9rem;
+  margin-top: 5px;
+  display: block;
 }
+
+[data-fs-success]:not(:empty) {
+  color: #ffffff;
+}
+
