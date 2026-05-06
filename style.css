@@ -201,6 +201,15 @@ html, body {
   width: 100%;
   max-width: 600px;
 }
+.project-img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 77, 77, 0.3);
+}
 
 .project-card h3 {
   margin-bottom: 10px;
