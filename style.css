@@ -136,7 +136,7 @@ html, body {
 .about-image img {
   width: 260px;
   height: 320px;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center top;
   border-radius: 15px;
   box-shadow: 0 0 25px rgba(255, 77, 77, 0.4);
