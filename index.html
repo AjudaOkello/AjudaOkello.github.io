@@ -133,36 +133,41 @@
 
     <div class="contact-right">
 
-      <form class="contact-form" action="https://formspree.io/f/mqenbvkb" method="POST">
+      <form id="contact-form" class="contact-form">
 
-         <input type="hidden" name="_redirect" value="https://ajudaokello.github.io/#contact">
+        <div data-fs-success class="form-message"></div>
+        <div data-fs-error class="form-message"></div>
 
         <div class="name-row">
 
           <div class="input-group">
             <label>First Name</label>
-            <input type="text" name="firstname">
+            <input type="text" name="firstname" data-fs-field>
+            <span data-fs-error="firstname"></span>
           </div>
 
           <div class="input-group">
             <label>Last Name</label>
-            <input type="text" name="lastname">
+            <input type="text" name="lastname" data-fs-field>
+            <span data-fs-error="lastname"></span>
           </div>
 
         </div>
 
         <div class="input-group">
           <label>Email</label>
-          <input type="email" name="email">
+          <input type="email" name="email" data-fs-field required>
+          <span data-fs-error="email"></span>
         </div>
 
         <div class="input-group">
           <label>Message</label>
-          <textarea rows="6" name="message"></textarea>
+          <textarea rows="6" name="message" data-fs-field required></textarea>
+          <span data-fs-error="message"></span>
         </div>
 
-        <button type="submit" class="contact-btn">
-        Send Message
+        <button type="submit" class="contact-btn" data-fs-submit-btn>
+          Send Message
         </button>
 
       </form>
@@ -202,3 +207,16 @@
   <footer>AJUDA OKELLO</footer>
 
 </section>
+
+<script>
+  window.formspree = window.formspree || function () {
+    (formspree.q = formspree.q || []).push(arguments);
+  };
+
+  formspree('initForm', {
+    formElement: '#contact-form',
+    formId: 'mqenbvkb'
+  });
+</script>
+
+<script src="https://unpkg.com/@formspree/ajax@1" defer></script>
