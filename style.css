@@ -238,7 +238,6 @@ body {
   opacity: 0.9;
   font-size: 1rem;
 }
-
 /* CONTACT FORM */
 .contact-container {
   width: 100%;
@@ -324,6 +323,22 @@ body {
   background: #ff6666;
 }
 
+/* CONTACT INFO */
+.contact-info {
+  margin-top: 35px;
+}
+
+.contact-info p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.contact-info a {
+  color: #ff4d4d;
+  text-decoration: none;
+}
+
 /* FOOTER */
 footer {
   margin-top: 40px;
@@ -348,5 +363,7 @@ footer {
   .name-row {
     flex-direction: column;
   }
+
+}
 
 }
