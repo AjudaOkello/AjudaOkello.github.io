@@ -290,4 +290,11 @@ footer {
   .section {
     padding: 120px 25px 80px;
   }
+  html {
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  scroll-snap-align: start;
+ }
 }
