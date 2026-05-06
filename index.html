@@ -122,53 +122,70 @@
     </div>
 
   </section>
-
   <!-- CONTACT -->
-  <section id="contact" class="section dark">
+<section id="contact" class="section dark">
 
-    <h2>Contact</h2>
+  <div class="contact-container">
 
-    <ul class="contact-list">
+    <div class="contact-left">
+      <h2>CONTACT ME DIRECTLY ></h2>
+    </div>
 
-      <li>
-        LinkedIn:
-        <a href="https://www.linkedin.com/in/ajudaeee/" target="_blank">
-          LinkedIn
-        </a>
-      </li>
+    <div class="contact-right">
 
-      <li>
-        Email:
-        <a href="mailto:Judaokello@gmail.com">
-          Judaokello@gmail.com
-        </a>
-      </li>
+      <form class="contact-form">
 
-      <li>
-        Phone:
-        <a href="tel:+61469704309">
-          +61 469 704 309
-        </a>
-      </li>
+        <div class="name-row">
 
-    </ul>
+          <div class="input-group">
+            <label>First Name</label>
+            <input type="text">
+          </div>
 
-    <footer>AJUDA OKELLO</footer>
+          <div class="input-group">
+            <label>Last Name</label>
+            <input type="text">
+          </div>
 
-  </section>
+        </div>
 
-  <script>
-    function scrollToSection(id) {
-      const section = document.getElementById(id);
+        <div class="input-group">
+          <label>Email</label>
+          <input type="email">
+        </div>
 
-      if (section) {
-        section.scrollIntoView({
-          behavior: "smooth",
-          block: "start"
-        });
-      }
+        <div class="input-group">
+          <label>Message</label>
+          <textarea rows="6"></textarea>
+        </div>
+
+        <button type="submit" class="contact-btn">
+          Send
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+  <footer>AJUDA OKELLO</footer>
+
+</section>
+
+<script>
+  function scrollToSection(id) {
+    const section = document.getElementById(id);
+
+    if (section) {
+      section.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
     }
-  </script>
+  }
+</script>
 
 </body>
 </html>
+
