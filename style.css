@@ -242,11 +242,11 @@ body {
 
 /* PWM PROJECT IMAGES */
 .project-images {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
   margin-bottom: 50px;
+  justify-items: center;
 }
 
 .project-images img {
@@ -262,7 +262,7 @@ body {
 @media (max-width: 900px) {
 
   .project-images {
-    gap: 20px;
+    grid-template-columns: 1fr;
   }
 
   .project-images img {
