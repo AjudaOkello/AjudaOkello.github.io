@@ -240,33 +240,30 @@ body {
   font-size: 1rem;
 }
 
-/* MULTIPLE PROJECT IMAGES */
+/* PWM PROJECT IMAGES */
 .project-images {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  margin-bottom: 30px;
-  align-items: start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 25px;
 }
 
 .project-images img {
-  width: 50%;
-  max-height: 250px;
+  width: 220px;
+  height: 140px;
   object-fit: contain;
   background: #111;
-  border-radius: 12px;
-  padding: 10px;
+  border-radius: 10px;
+  padding: 5px;
 }
 
 /* MOBILE */
 @media (max-width: 900px) {
 
-  .project-images {
-    grid-template-columns: 1fr;
-  }
-
   .project-images img {
-    max-height: 180px;
+    width: 160px;
+    height: 100px;
   }
 
 }
