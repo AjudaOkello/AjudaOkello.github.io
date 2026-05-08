@@ -238,6 +238,35 @@ body {
   opacity: 0.9;
   font-size: 1rem;
 }
+/* MULTIPLE PROJECT IMAGES */
+.project-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.project-images img {
+  width: 100%;
+  height: 260px;
+  object-fit: contain;
+  background: #111;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+
+  .project-images {
+    grid-template-columns: 1fr;
+  }
+
+  .project-images img {
+    height: 220px;
+  }
+
+}
 /* CONTACT */
 .contact-container {
   width: 100%;
