@@ -220,7 +220,7 @@ body {
 }
 
 .project-img {
-  width: 100%;
+  width: 50%;
   max-width: 350px;
   height: 200px;
   object-fit: cover;
@@ -250,7 +250,7 @@ body {
 }
 
 .project-images img {
-  width: 100%;
+  width: 50%;
   max-height: 250px;
   object-fit: contain;
   background: #111;
