@@ -3,22 +3,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Ajuda Obelibi Okello | Electrical & Electronic Engineering Portfolio</title>
 
-  <meta name="description" content="Ajuda Obelibi Okello is an Electrical and Electronic Engineering student at Griffith University with interests in electronics, computer architecture, embedded systems, circuit design, C programming, Python, and aerospace technology.">
-  <meta name="keywords" content="Ajuda Obelibi Okello, Ajuda Okello, Electrical Engineering Portfolio, Electronic Engineering Student, Griffith University, Embedded Systems, Circuit Design, Computer Architecture, C Programming, Python, Aerospace Electronics">
+  <meta
+    name="description"
+    content="Ajuda Obelibi Okello is an Electrical and Electronic Engineering student at Griffith University with interests in electronics, computer architecture, embedded systems, circuit design, C programming, Python, and aerospace technology."
+  >
+
+  <meta
+    name="keywords"
+    content="Ajuda Obelibi Okello, Ajuda Okello, Electrical Engineering Portfolio, Electronic Engineering Student, Griffith University, Embedded Systems, Circuit Design, Computer Architecture, C Programming, Python, Aerospace Electronics"
+  >
+
   <meta name="author" content="Ajuda Obelibi Okello">
+
   <link rel="canonical" href="https://ajudaokello.github.io/" />
 
   <meta property="og:title" content="Ajuda Obelibi Okello | Portfolio">
-  <meta property="og:description" content="Electrical and Electronic Engineering student portfolio focused on electronics, computer architecture, embedded systems, circuit design, and aerospace technology.">
+
+  <meta
+    property="og:description"
+    content="Electrical and Electronic Engineering student portfolio focused on electronics, computer architecture, embedded systems, circuit design, and aerospace technology."
+  >
+
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://ajudaokello.github.io/">
   <meta property="og:image" content="https://ajudaokello.github.io/WEBfront.jpg">
 
   <link rel="stylesheet" href="style.css" />
 
-  <!-- Structured data so search engines can associate this page with the name "Ajuda Obelibi Okello" -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -37,250 +51,1366 @@
     ]
   }
   </script>
+
+  <style>
+
+    /* =========================
+       RADAR HERO
+    ========================= */
+
+    .hero-radar {
+      width: 100%;
+      max-width: 560px;
+      background: rgba(7, 13, 20, 0.92);
+      border: 1px solid rgba(90, 255, 160, 0.22);
+      border-radius: 18px;
+      padding: 18px;
+      box-sizing: border-box;
+
+      box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.35),
+        inset 0 0 30px rgba(0, 255, 120, 0.03);
+    }
+
+    .radar-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      font-family: monospace;
+      font-size: 0.75rem;
+      letter-spacing: 2px;
+
+      margin-bottom: 10px;
+
+      color: #88949e;
+    }
+
+    .radar-status {
+      color: #67ff9a;
+    }
+
+    #radarCanvas {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .radar-data {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+      padding-top: 14px;
+    }
+
+    .radar-data div {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .radar-data small {
+      color: #68737e;
+
+      font-family: monospace;
+      font-size: 0.65rem;
+
+      letter-spacing: 1.5px;
+    }
+
+    .radar-data strong {
+      color: #e6edf3;
+
+      font-family: monospace;
+      font-size: 0.95rem;
+
+      margin-top: 4px;
+    }
+
+    @media (max-width: 850px) {
+
+      .hero {
+        grid-template-columns: 1fr !important;
+      }
+
+      .hero-radar {
+        margin-top: 30px;
+        max-width: 100%;
+      }
+
+    }
+
+  </style>
+
 </head>
 
 <body>
 
+  <!-- =========================
+       NAVIGATION
+  ========================== -->
+
   <nav class="navbar">
-    <div class="logo">AJUDA OKELLO</div>
+
+    <div class="logo">
+      AJUDA OKELLO
+    </div>
+
     <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
+
+      <li>
+        <a href="#home">Home</a>
+      </li>
+
+      <li>
+        <a href="#about">About</a>
+      </li>
+
+      <li>
+        <a href="#projects">Projects</a>
+      </li>
+
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
+
     </ul>
+
   </nav>
 
-  <!-- HOME -->
+
+  <!-- =========================
+       HOME
+  ========================== -->
+
   <section id="home" class="home">
+
     <div class="hero">
+
+
+      <!-- LEFT SIDE -->
+
       <div class="hero-content">
-        <h1>HI, I'M AJUDA OKELLO</h1>
-        <p>Electrical & Electronic Engineering Student</p>
-        <p>Griffith University</p>
-        <p>Strong passion for computer architecture and electronics.</p>
-      </div>
-      <div class="hero-image">
-        <img src="WEBfront.jpg" alt="Ajuda Obelibi Okello portfolio photo">
-      </div>
-    </div>
-  </section>
 
-  <!-- ABOUT -->
-  <section id="about" class="section dark">
-    <div class="about-container">
-      <div class="about-image">
-        <img src="frontphoto.jpg" alt="Ajuda Obelibi Okello">
-      </div>
-      <div class="about-content">
-        <h2>About Me</h2>
+        <h1>
+          HI, I'M AJUDA OKELLO
+        </h1>
+
         <p>
-          I am an Electrical and Electronic Engineering student at Griffith University's Gold Coast campus with a strong passion for programming, electronics, and computer architecture. I particularly enjoy courses involving circuit simulation and practical implementation on breadboards, as they allow me to apply theoretical concepts in a hands on environment.
-        </p>
-        <p>
-          My interests focus on hardware components and embedded programming, particularly in circuit design, embedded systems, control systems, and electronic analysis. I enjoy understanding how hardware and software interact at a low level, especially through practical implementation, simulation, and system level design.
-        </p>
-        <p>
-          I have experience with engineering and simulation tools, including CircuitLab, EasyEDA, SPICE, and PUFF, and have developed programming skills in both C and Python, with C as my preferred language.
-        </p>
-        <p>
-          I am especially interested in computer electronic design, including modern motherboards and hardware systems, as well as aeronautical and aerospace technologies, due to the large number of advanced electronic systems used in modern aircraft and space applications.
-        </p>
-        <p>If you would like to learn more about me, please see my resume below.</p>
-        <a href="AJCV.pdf" download class="btn">RESUME</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects" class="section">
-
-    <h2>Projects</h2>
-
-    <div class="project-tabs" role="tablist" aria-label="Select an artifact">
-      <button class="tab-btn prev-btn" id="prevBtn" aria-label="Previous artifact">&#8249;</button>
-      <button class="tab-btn active" data-target="project-1" role="tab" aria-selected="true">1. Library System</button>
-      <button class="tab-btn" data-target="project-2" role="tab" aria-selected="false">2. PWM Motor Control</button>
-      <button class="tab-btn next-btn" id="nextBtn" aria-label="Next artifact">&#8250;</button>
-    </div>
-
-    <!-- ARTIFACT 1 -->
-    <article class="project-card active" id="project-1">
-
-      <img src="Book.jpg" alt="Book Library Management System console screenshot" class="project-img">
-
-      <h3>Book Library Management System</h3>
-
-      <div class="skills-tags">
-        <span>C Programming</span>
-        <span>Data Structures</span>
-        <span>Program Logic & Functions</span>
-        <span>CLI / Menu-Driven Design</span>
-      </div>
-
-      <div class="reflection">
-
-        <h4>Task</h4>
-        <p>
-          Build a console based Book Library Management System in C that lets a librarian manage a book catalogue and its users through a menu driven interface, including adding, viewing, deleting, borrowing, and returning books.
+          Electrical & Electronic Engineering Student
         </p>
 
-        <h4>My Role</h4>
         <p>
-          I designed and coded the system independently, from planning the data structures for books and users through to writing and testing every function in the menu.
+          Griffith University
         </p>
 
-        <h4>Problem-Solving</h4>
         <p>
-          The main challenge was structuring the program so that book records, user records, and borrowing status stayed consistent as the menu looped and functions called each other. I addressed this by using C structures to group related data, and by breaking the program into small, single-purpose functions for each menu action, which made the logic easier to trace and debug.
-        </p>
-
-        <h4>Outcome</h4>
-        <p>
-          The result is a working, menu-driven library system that reliably adds, borrows, returns, and deletes books and users without corrupting the underlying records. Building it strengthened my understanding of programming logic, functions, structures, and menu based application design in C.
+          Strong passion for computer architecture and electronics.
         </p>
 
       </div>
 
-    </article>
 
-    <!-- ARTIFACT 2 -->
-    <article class="project-card" id="project-2">
+      <!-- RIGHT SIDE RADAR -->
 
-      <div class="project-images">
-        <img src="PWM.jpg" alt="PWM Block Diagram">
-        <img src="PCB.png" alt="PWM PCB 3D render">
-        <img src="PCB2.png" alt="PWM PCB Layout">
-        <img src="PCB3.png" alt="PWM Circuit Schematic">
-      </div>
+      <div class="hero-radar">
 
-      <h3>PWM DC Motor Speed Control</h3>
+        <div class="radar-header">
 
-      <div class="skills-tags">
-        <span>Circuit Design</span>
-        <span>PWM / Motor Drive Circuits</span>
-        <span>Analogue Electronics</span>
-        <span>Circuit Simulation</span>
-        <span>PCB Layout</span>
-      </div>
+          <span>
+            RADAR SIMULATION
+          </span>
 
-      <div class="reflection">
+          <span class="radar-status">
+            ● SCANNING
+          </span>
 
-        <h4>Task</h4>
-        <p>
-          Design and implement a PWM DC Motor Speed Control system able to vary motor speed from 0% to 100% duty cycle, including power conversion from a transformer, rectifier, and filter stage.
-        </p>
+        </div>
 
-        <h4>My Role</h4>
-        <p>
-          I designed the triangle wave generator, comparator circuit, isolation circuit, and drive circuit, and simulated and laid out the supporting PCB.
-        </p>
 
-        <h4>Problem-Solving</h4>
-        <p>
-          The main challenge was getting the comparator to translate a variable reference voltage into a clean, linear duty cycle across the full 0-100% range, while keeping the low-power control side isolated from the higher-power motor drive side. I worked through this using circuit simulation to tune the triangle wave generator and comparator thresholds before committing to the PCB layout, and used an isolation stage to protect the control circuitry from motor-side noise and voltage spikes.
-        </p>
+        <canvas
+          id="radarCanvas"
+          width="520"
+          height="360">
+        </canvas>
 
-        <h4>Outcome</h4>
-        <p>
-          The system produced a stable, linearly adjustable PWM output across the full duty cycle range. Working through it improved my understanding of PWM control, motor drive circuits, circuit simulation, and practical electronics design.
-        </p>
 
-      </div>
+        <div class="radar-data">
 
-    </article>
+          <div>
 
-  </section>
+            <small>
+              ANGLE
+            </small>
 
-  <!-- CONTACT -->
-  <section id="contact" class="section dark">
+            <strong id="radarAngle">
+              20°
+            </strong>
 
-    <div class="contact-container">
-
-      <div class="contact-left">
-        <h2>CONTACT ME<br>DIRECTLY ></h2>
-      </div>
-
-      <div class="contact-right">
-
-        <form id="contact-form" class="contact-form">
-
-          <div data-fs-success class="form-message"></div>
-          <div data-fs-error class="form-message"></div>
-
-          <div class="name-row">
-            <div class="input-group">
-              <label>First Name</label>
-              <input type="text" name="firstname" data-fs-field>
-              <span data-fs-error="firstname"></span>
-            </div>
-            <div class="input-group">
-              <label>Last Name</label>
-              <input type="text" name="lastname" data-fs-field>
-              <span data-fs-error="lastname"></span>
-            </div>
           </div>
 
-          <div class="input-group">
-            <label>Email</label>
-            <input type="email" name="email" data-fs-field required>
-            <span data-fs-error="email"></span>
+
+          <div>
+
+            <small>
+              DISTANCE
+            </small>
+
+            <strong id="radarDistance">
+              --
+            </strong>
+
           </div>
 
-          <div class="input-group">
-            <label>Message</label>
-            <textarea rows="6" name="message" data-fs-field required></textarea>
-            <span data-fs-error="message"></span>
+
+          <div>
+
+            <small>
+              MODE
+            </small>
+
+            <strong>
+              AUTO
+            </strong>
+
           </div>
 
-          <button type="submit" class="contact-btn" data-fs-submit-btn>Send Message</button>
-
-        </form>
-
-        <div class="contact-info">
-          <div class="contact-item"><a href="https://www.linkedin.com/in/ajudaeee/" target="_blank">LinkedIn</a></div>
-          <div class="contact-item"><a href="mailto:Judaokello@gmail.com">Gmail</a></div>
-          <div class="contact-item"><a href="tel:+61469704309">Phone</a></div>
-          <div class="contact-item"><a href="https://github.com/AjudaOkello" target="_blank">GitHub</a></div>
         </div>
 
       </div>
 
     </div>
 
-    <footer>AJUDA OBELIBI OKELLO</footer>
+  </section>
+
+
+
+  <!-- =========================
+       ABOUT
+  ========================== -->
+
+  <section id="about" class="section dark">
+
+    <div class="about-container">
+
+
+      <div class="about-image">
+
+        <img
+          src="frontphoto.jpg"
+          alt="Ajuda Obelibi Okello"
+        >
+
+      </div>
+
+
+      <div class="about-content">
+
+        <h2>
+          About Me
+        </h2>
+
+
+        <p>
+          I am an Electrical and Electronic Engineering student at Griffith University's Gold Coast campus with a strong passion for programming, electronics, and computer architecture. I particularly enjoy courses involving circuit simulation and practical implementation on breadboards, as they allow me to apply theoretical concepts in a hands on environment.
+        </p>
+
+
+        <p>
+          My interests focus on hardware components and embedded programming, particularly in circuit design, embedded systems, control systems, and electronic analysis. I enjoy understanding how hardware and software interact at a low level, especially through practical implementation, simulation, and system level design.
+        </p>
+
+
+        <p>
+          I have experience with engineering and simulation tools, including CircuitLab, EasyEDA, SPICE, and PUFF, and have developed programming skills in both C and Python, with C as my preferred language.
+        </p>
+
+
+        <p>
+          I am especially interested in computer electronic design, including modern motherboards and hardware systems, as well as aeronautical and aerospace technologies, due to the large number of advanced electronic systems used in modern aircraft and space applications.
+        </p>
+
+
+        <p>
+          If you would like to learn more about me, please see my resume below.
+        </p>
+
+
+        <a
+          href="AJCV.pdf"
+          download
+          class="btn">
+          RESUME
+        </a>
+
+      </div>
+
+    </div>
 
   </section>
 
-  <script>
-    window.formspree = window.formspree || function () {
-      (formspree.q = formspree.q || []).push(arguments);
-    };
-    formspree('initForm', { formElement: '#contact-form', formId: 'mqenbvkb' });
-  </script>
-  <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 
-  <!-- Artifact tab switching -->
+
+  <!-- =========================
+       PROJECTS
+  ========================== -->
+
+  <section
+    id="projects"
+    class="section">
+
+
+    <h2>
+      Projects
+    </h2>
+
+
+    <div
+      class="project-tabs"
+      role="tablist"
+      aria-label="Select an artifact">
+
+
+      <button
+        class="tab-btn prev-btn"
+        id="prevBtn"
+        aria-label="Previous artifact">
+
+        &#8249;
+
+      </button>
+
+
+      <button
+        class="tab-btn active"
+        data-target="project-1"
+        role="tab"
+        aria-selected="true">
+
+        1. Library System
+
+      </button>
+
+
+      <button
+        class="tab-btn"
+        data-target="project-2"
+        role="tab"
+        aria-selected="false">
+
+        2. PWM Motor Control
+
+      </button>
+
+
+      <button
+        class="tab-btn next-btn"
+        id="nextBtn"
+        aria-label="Next artifact">
+
+        &#8250;
+
+      </button>
+
+
+    </div>
+
+
+
+    <!-- =========================
+         PROJECT 1
+    ========================== -->
+
+    <article
+      class="project-card active"
+      id="project-1">
+
+
+      <img
+        src="Book.jpg"
+        alt="Book Library Management System console screenshot"
+        class="project-img"
+      >
+
+
+      <h3>
+        Book Library Management System
+      </h3>
+
+
+      <div class="skills-tags">
+
+        <span>
+          C Programming
+        </span>
+
+        <span>
+          Data Structures
+        </span>
+
+        <span>
+          Program Logic & Functions
+        </span>
+
+        <span>
+          CLI / Menu-Driven Design
+        </span>
+
+      </div>
+
+
+
+      <div class="reflection">
+
+
+        <h4>
+          Task
+        </h4>
+
+        <p>
+          Build a console based Book Library Management System in C that lets a librarian manage a book catalogue and its users through a menu driven interface, including adding, viewing, deleting, borrowing, and returning books.
+        </p>
+
+
+        <h4>
+          My Role
+        </h4>
+
+        <p>
+          I designed and coded the system independently, from planning the data structures for books and users through to writing and testing every function in the menu.
+        </p>
+
+
+        <h4>
+          Problem-Solving
+        </h4>
+
+        <p>
+          The main challenge was structuring the program so that book records, user records, and borrowing status stayed consistent as the menu looped and functions called each other. I addressed this by using C structures to group related data, and by breaking the program into small, single-purpose functions for each menu action, which made the logic easier to trace and debug.
+        </p>
+
+
+        <h4>
+          Outcome
+        </h4>
+
+        <p>
+          The result is a working, menu-driven library system that reliably adds, borrows, returns, and deletes books and users without corrupting the underlying records. Building it strengthened my understanding of programming logic, functions, structures, and menu based application design in C.
+        </p>
+
+
+      </div>
+
+    </article>
+
+
+
+    <!-- =========================
+         PROJECT 2
+    ========================== -->
+
+    <article
+      class="project-card"
+      id="project-2">
+
+
+      <div class="project-images">
+
+        <img
+          src="PWM.jpg"
+          alt="PWM Block Diagram"
+        >
+
+        <img
+          src="PCB.png"
+          alt="PWM PCB 3D render"
+        >
+
+        <img
+          src="PCB2.png"
+          alt="PWM PCB Layout"
+        >
+
+        <img
+          src="PCB3.png"
+          alt="PWM Circuit Schematic"
+        >
+
+      </div>
+
+
+      <h3>
+        PWM DC Motor Speed Control
+      </h3>
+
+
+      <div class="skills-tags">
+
+        <span>
+          Circuit Design
+        </span>
+
+        <span>
+          PWM / Motor Drive Circuits
+        </span>
+
+        <span>
+          Analogue Electronics
+        </span>
+
+        <span>
+          Circuit Simulation
+        </span>
+
+        <span>
+          PCB Layout
+        </span>
+
+      </div>
+
+
+
+      <div class="reflection">
+
+
+        <h4>
+          Task
+        </h4>
+
+        <p>
+          Design and implement a PWM DC Motor Speed Control system able to vary motor speed from 0% to 100% duty cycle, including power conversion from a transformer, rectifier, and filter stage.
+        </p>
+
+
+        <h4>
+          My Role
+        </h4>
+
+        <p>
+          I designed the triangle wave generator, comparator circuit, isolation circuit, and drive circuit, and simulated and laid out the supporting PCB.
+        </p>
+
+
+        <h4>
+          Problem-Solving
+        </h4>
+
+        <p>
+          The main challenge was getting the comparator to translate a variable reference voltage into a clean, linear duty cycle across the full 0-100% range, while keeping the low-power control side isolated from the higher-power motor drive side. I worked through this using circuit simulation to tune the triangle wave generator and comparator thresholds before committing to the PCB layout, and used an isolation stage to protect the control circuitry from motor-side noise and voltage spikes.
+        </p>
+
+
+        <h4>
+          Outcome
+        </h4>
+
+        <p>
+          The system produced a stable, linearly adjustable PWM output across the full duty cycle range. Working through it improved my understanding of PWM control, motor drive circuits, circuit simulation, and practical electronics design.
+        </p>
+
+
+      </div>
+
+    </article>
+
+  </section>
+
+
+
+  <!-- =========================
+       CONTACT
+  ========================== -->
+
+  <section
+    id="contact"
+    class="section dark">
+
+
+    <div class="contact-container">
+
+
+      <div class="contact-left">
+
+        <h2>
+          CONTACT ME<br>
+          DIRECTLY >
+        </h2>
+
+      </div>
+
+
+
+      <div class="contact-right">
+
+
+        <form
+          id="contact-form"
+          class="contact-form">
+
+
+          <div
+            data-fs-success
+            class="form-message">
+          </div>
+
+
+          <div
+            data-fs-error
+            class="form-message">
+          </div>
+
+
+
+          <div class="name-row">
+
+
+            <div class="input-group">
+
+              <label>
+                First Name
+              </label>
+
+              <input
+                type="text"
+                name="firstname"
+                data-fs-field
+              >
+
+              <span
+                data-fs-error="firstname">
+              </span>
+
+            </div>
+
+
+
+            <div class="input-group">
+
+              <label>
+                Last Name
+              </label>
+
+              <input
+                type="text"
+                name="lastname"
+                data-fs-field
+              >
+
+              <span
+                data-fs-error="lastname">
+              </span>
+
+            </div>
+
+
+          </div>
+
+
+
+          <div class="input-group">
+
+            <label>
+              Email
+            </label>
+
+            <input
+              type="email"
+              name="email"
+              data-fs-field
+              required
+            >
+
+            <span
+              data-fs-error="email">
+            </span>
+
+          </div>
+
+
+
+          <div class="input-group">
+
+            <label>
+              Message
+            </label>
+
+            <textarea
+              rows="6"
+              name="message"
+              data-fs-field
+              required>
+            </textarea>
+
+            <span
+              data-fs-error="message">
+            </span>
+
+          </div>
+
+
+
+          <button
+            type="submit"
+            class="contact-btn"
+            data-fs-submit-btn>
+
+            Send Message
+
+          </button>
+
+
+        </form>
+
+
+
+        <div class="contact-info">
+
+
+          <div class="contact-item">
+
+            <a
+              href="https://www.linkedin.com/in/ajudaeee/"
+              target="_blank">
+
+              LinkedIn
+
+            </a>
+
+          </div>
+
+
+          <div class="contact-item">
+
+            <a href="mailto:Judaokello@gmail.com">
+
+              Gmail
+
+            </a>
+
+          </div>
+
+
+          <div class="contact-item">
+
+            <a href="tel:+61469704309">
+
+              Phone
+
+            </a>
+
+          </div>
+
+
+          <div class="contact-item">
+
+            <a
+              href="https://github.com/AjudaOkello"
+              target="_blank">
+
+              GitHub
+
+            </a>
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+    <footer>
+      AJUDA OBELIBI OKELLO
+    </footer>
+
+
+  </section>
+
+
+
+  <!-- =========================
+       FORMSPREE
+  ========================== -->
+
   <script>
+
+    window.formspree =
+      window.formspree ||
+      function () {
+
+        (formspree.q =
+          formspree.q || [])
+          .push(arguments);
+
+      };
+
+
+    formspree(
+      'initForm',
+      {
+        formElement: '#contact-form',
+        formId: 'mqenbvkb'
+      }
+    );
+
+  </script>
+
+
+  <script
+    src="https://unpkg.com/@formspree/ajax@1"
+    defer>
+  </script>
+
+
+
+  <!-- =========================
+       PROJECT TAB SWITCHING
+  ========================== -->
+
+  <script>
+
     (function () {
-      const tabs = Array.from(document.querySelectorAll('.tab-btn[data-target]'));
-      const cards = Array.from(document.querySelectorAll('.project-card'));
+
+      const tabs =
+        Array.from(
+          document.querySelectorAll(
+            '.tab-btn[data-target]'
+          )
+        );
+
+
+      const cards =
+        Array.from(
+          document.querySelectorAll(
+            '.project-card'
+          )
+        );
+
+
       let current = 0;
 
+
+
       function show(index) {
-        current = (index + cards.length) % cards.length;
-        cards.forEach((c, i) => c.classList.toggle('active', i === current));
-        tabs.forEach((t, i) => {
-          t.classList.toggle('active', i === current);
-          t.setAttribute('aria-selected', i === current ? 'true' : 'false');
-        });
+
+        current =
+          (index + cards.length)
+          % cards.length;
+
+
+        cards.forEach(
+          (card, i) => {
+
+            card.classList.toggle(
+              'active',
+              i === current
+            );
+
+          }
+        );
+
+
+        tabs.forEach(
+          (tab, i) => {
+
+            tab.classList.toggle(
+              'active',
+              i === current
+            );
+
+            tab.setAttribute(
+              'aria-selected',
+              i === current
+                ? 'true'
+                : 'false'
+            );
+
+          }
+        );
+
       }
 
-      tabs.forEach((tab, i) => tab.addEventListener('click', () => show(i)));
-      document.getElementById('prevBtn').addEventListener('click', () => show(current - 1));
-      document.getElementById('nextBtn').addEventListener('click', () => show(current + 1));
+
+      tabs.forEach(
+        (tab, i) => {
+
+          tab.addEventListener(
+            'click',
+            () => show(i)
+          );
+
+        }
+      );
+
+
+      document
+        .getElementById('prevBtn')
+        .addEventListener(
+          'click',
+          () => show(current - 1)
+        );
+
+
+      document
+        .getElementById('nextBtn')
+        .addEventListener(
+          'click',
+          () => show(current + 1)
+        );
+
     })();
+
   </script>
 
+
+
+  <!-- =========================
+       RADAR SIMULATION
+  ========================== -->
+
+  <script>
+
+    const canvas =
+      document.getElementById(
+        "radarCanvas"
+      );
+
+
+    const ctx =
+      canvas.getContext("2d");
+
+
+    const angleDisplay =
+      document.getElementById(
+        "radarAngle"
+      );
+
+
+    const distanceDisplay =
+      document.getElementById(
+        "radarDistance"
+      );
+
+
+    const cx =
+      canvas.width / 2;
+
+
+    const cy =
+      canvas.height - 25;
+
+
+    let angle = 15;
+
+    let direction = 1;
+
+
+
+    /*
+      Simulated targets
+    */
+
+    const targets = [
+
+      {
+        angle: 38,
+        distance: 145
+      },
+
+      {
+        angle: 72,
+        distance: 205
+      },
+
+      {
+        angle: 113,
+        distance: 170
+      },
+
+      {
+        angle: 146,
+        distance: 110
+      }
+
+    ];
+
+
+
+    function pointFromRadar(
+      angleDegrees,
+      distance
+    ) {
+
+      const radians =
+        angleDegrees
+        * Math.PI
+        / 180;
+
+
+      return {
+
+        x:
+          cx
+          - Math.cos(radians)
+          * distance,
+
+        y:
+          cy
+          - Math.sin(radians)
+          * distance
+
+      };
+
+    }
+
+
+
+    function drawRadarGrid() {
+
+
+      ctx.strokeStyle =
+        "rgba(82, 255, 145, 0.15)";
+
+
+      ctx.lineWidth = 1;
+
+
+
+      /*
+        Distance rings
+      */
+
+      for (
+        let radius = 55;
+        radius <= 275;
+        radius += 55
+      ) {
+
+        ctx.beginPath();
+
+
+        ctx.arc(
+          cx,
+          cy,
+          radius,
+          Math.PI,
+          Math.PI * 2
+        );
+
+
+        ctx.stroke();
+
+      }
+
+
+
+      /*
+        Angle lines
+      */
+
+      for (
+        let a = 0;
+        a <= 180;
+        a += 30
+      ) {
+
+        const point =
+          pointFromRadar(
+            a,
+            275
+          );
+
+
+        ctx.beginPath();
+
+
+        ctx.moveTo(
+          cx,
+          cy
+        );
+
+
+        ctx.lineTo(
+          point.x,
+          point.y
+        );
+
+
+        ctx.stroke();
+
+      }
+
+    }
+
+
+
+    function drawTargets() {
+
+
+      targets.forEach(
+        target => {
+
+
+          const point =
+            pointFromRadar(
+              target.angle,
+              target.distance
+            );
+
+
+          const detected =
+            Math.abs(
+              angle
+              - target.angle
+            )
+            < 4;
+
+
+
+          ctx.beginPath();
+
+
+          ctx.fillStyle =
+            detected
+              ? "#ff625f"
+              : "rgba(255, 98, 95, 0.30)";
+
+
+          ctx.arc(
+            point.x,
+            point.y,
+            detected ? 7 : 4,
+            0,
+            Math.PI * 2
+          );
+
+
+          ctx.fill();
+
+        }
+      );
+
+    }
+
+
+
+    function drawBeam() {
+
+
+      const beam =
+        pointFromRadar(
+          angle,
+          275
+        );
+
+
+      const gradient =
+        ctx.createLinearGradient(
+          cx,
+          cy,
+          beam.x,
+          beam.y
+        );
+
+
+      gradient.addColorStop(
+        0,
+        "rgba(100,255,150,0.85)"
+      );
+
+
+      gradient.addColorStop(
+        1,
+        "rgba(100,255,150,0.10)"
+      );
+
+
+      ctx.strokeStyle =
+        gradient;
+
+
+      ctx.lineWidth =
+        3;
+
+
+      ctx.beginPath();
+
+
+      ctx.moveTo(
+        cx,
+        cy
+      );
+
+
+      ctx.lineTo(
+        beam.x,
+        beam.y
+      );
+
+
+      ctx.stroke();
+
+    }
+
+
+
+    function updateDetection() {
+
+
+      let detectedTarget =
+        null;
+
+
+      targets.forEach(
+        target => {
+
+
+          if (
+            Math.abs(
+              angle
+              - target.angle
+            )
+            < 2
+          ) {
+
+            detectedTarget =
+              target;
+
+          }
+
+        }
+      );
+
+
+
+      if (
+        detectedTarget
+      ) {
+
+        const metres =
+          detectedTarget.distance
+          / 100;
+
+
+        distanceDisplay.textContent =
+          metres.toFixed(2)
+          + " m";
+
+      }
+
+      else {
+
+        distanceDisplay.textContent =
+          "--";
+
+      }
+
+    }
+
+
+
+    function animateRadar() {
+
+
+      ctx.clearRect(
+        0,
+        0,
+        canvas.width,
+        canvas.height
+      );
+
+
+      drawRadarGrid();
+
+
+      drawTargets();
+
+
+      drawBeam();
+
+
+
+      /*
+        Radar centre
+      */
+
+      ctx.beginPath();
+
+
+      ctx.fillStyle =
+        "#72ff9d";
+
+
+      ctx.arc(
+        cx,
+        cy,
+        6,
+        0,
+        Math.PI * 2
+      );
+
+
+      ctx.fill();
+
+
+
+      angleDisplay.textContent =
+        Math.round(angle)
+        + "°";
+
+
+      updateDetection();
+
+
+
+      /*
+        Sweep
+      */
+
+      angle +=
+        direction
+        * 0.45;
+
+
+
+      if (
+        angle >= 165
+      ) {
+
+        direction = -1;
+
+      }
+
+
+
+      if (
+        angle <= 15
+      ) {
+
+        direction = 1;
+
+      }
+
+
+
+      requestAnimationFrame(
+        animateRadar
+      );
+
+    }
+
+
+
+    animateRadar();
+
+  </script>
+
+
 </body>
+
 </html>
